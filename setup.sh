@@ -22,7 +22,7 @@ BURIQ () {
 }
 # https://raw.githubusercontent.com/daneshswara29/IP/main/regis 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/CorpID01/IP/main/regis | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/regis | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
