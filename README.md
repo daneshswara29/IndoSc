@@ -14,15 +14,6 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 Daneshswara :
 <br><br><a href="https://wa.me/+6282380835972" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Whatsapp&label=Whatsapp&message=Click%20Here&color=#006400">
 
-## UPDATE SCRIPT
-Masukkan perintah dibawah jika terdapat informasi pembaruan Script untuk versi yang akan datang
-```
-wget -q https://raw.githubusercontent.com/daneshswara29/Scriptvvip/main/update.sh && chmod +x update.sh && ./update.sh
-```
-
-## TESTED ON OS
-- UBUNTU Version 18 Atau 20 (Recommended)
-- DEBIAN Version 09 Atau 10
 
 ## SERVER OTHER FEATURES
 - Timezone           : Locatiaon VPS
