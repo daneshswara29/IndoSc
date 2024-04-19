@@ -210,7 +210,7 @@ d1=$(date -d "$exp" +%s)
 d2=$(date -d "$today" +%s)
 certificate=$(( (d1 - d2) / 86400 ))
 export sem=$( curl -s https://raw.githubusercontent.com/daneshswara29/IndoSc/main/versi)
-export pak=$( cat /home/.ver)
+export pak=$( cat /opt/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
