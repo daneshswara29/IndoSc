@@ -262,7 +262,8 @@ echo -e " ${BICyan}|    [${BIWhite}11${BICyan}] BOT TELEGRAM${NC} "
 echo -e " ${BICyan}|    [${BIWhite}12${BICyan}] REGISTRASI IPVPS BARU${NC} "
 echo -e " ${BICyan}|    [${BIWhite}13${BICyan}] CLEAR SAMPAH${NC} "
 echo -e " ${BICyan}|    [${BIWhite}14${BICyan}] CEK AKUN${NC} "
-echo -e " ${BICyan}|    [${BIWhite}15${BICyan}] BACKUP TO GITHUB ${BICyan}[${BIYellow}Menu${BICyan}]${NC} "
+echo -e " ${BICyan}|    [${BIWhite}15${BICyan}] INSTALL UDP${NC} "
+echo -e " ${BICyan}|    [${BIWhite}16${BICyan}] BACKUP TO GITHUB ${BICyan}[${BIYellow}Menu${BICyan}]${NC} "
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │$NC ${BICyan}HARI ini${NC}: ${red}$ttoday$NC ${BICyan}KEMARIN${NC}: ${red}$tyest$NC ${BICyan}BULAN${NC}: ${red}$tmon$NC $NC"
@@ -291,7 +292,8 @@ case $opt in
 12) clear ; m-ip ;;
 13) clear ; clearcache ;;
 14) clear ; cat /etc/log-create-user.log ;;
-15) clear ; menu-bckp ;;
+15) clear ; wget https://raw.githubusercontent.com/daneshswara29/IndoSc/main/udpcustom/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh ;;
+16) clear ; menu-bckp ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;

@@ -55,7 +55,8 @@ echo -e "     ${BICyan}[${BIWhite}09${BICyan}] Cek Bandwith"
 echo -e "     ${BICyan}[${BIWhite}10${BICyan}] Setting Auto Reboot"
 echo -e "     ${BICyan}[${BIWhite}11${BICyan}] Update Script"
 echo -e "     ${BICyan}[${BIWhite}12${BICyan}] Menu Bot"
-echo -e "     ${BICyan}[${BIWhite}12${BICyan}] Menu Registrasi Ipvps"
+echo -e "     ${BICyan}[${BIWhite}13${BICyan}] Menu Registrasi Ipvps"
+echo -e "     ${BICyan}[${BIWhite}14${BICyan}] Instalasi UDPGW Mini"
 echo -e ""
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
@@ -76,6 +77,30 @@ case $opt in
 11) clear ; menu-update ; exit ;;
 12) clear ; m-bot ; exit ;;
 13) clear ; m-ip ; exit ;;
+14) clear ;
+echo -e "PROSES INSTALASI UDPGW MINI 7100, 7200, 7300"; sleep 5;
+
+mkdir -p /usr/local/kyt/
+wget -q -O /usr/local/kyt/udp-mini "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/udpcustom/udp-mini"
+chmod +x /usr/local/kyt/udp-mini
+wget -q -O /etc/systemd/system/udp-mini-1.service "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/udpcustom/udp-mini-1.service"
+wget -q -O /etc/systemd/system/udp-mini-2.service "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/udpcustom/udp-mini-2.service"
+wget -q -O /etc/systemd/system/udp-mini-3.service "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/udpcustom/udp-mini-3.service"
+systemctl disable udp-mini-1
+systemctl stop udp-mini-1
+systemctl enable udp-mini-1
+systemctl start udp-mini-1
+systemctl disable udp-mini-2
+systemctl stop udp-mini-2
+systemctl enable udp-mini-2
+systemctl start udp-mini-2
+systemctl disable udp-mini-3
+systemctl stop udp-mini-3
+systemctl enable udp-mini-3
+systemctl start udp-mini-3
+
+echo -e "INSTALASI SUCCESS UDPGW MINI 7100, 7200, 7300"; sleep 5;
+exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; menu-set ;;
