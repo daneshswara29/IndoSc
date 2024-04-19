@@ -261,7 +261,7 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e " ${BICyan}|    [${BIWhite}11${BICyan}] BOT TELEGRAM${NC} "
 echo -e " ${BICyan}|    [${BIWhite}12${BICyan}] REGISTRASI IPVPS BARU${NC} "
 echo -e " ${BICyan}|    [${BIWhite}13${BICyan}] CLEAR SAMPAH${NC} "
-echo -e " ${BICyan}|    [${BIWhite}14${BICyan}] UPDATE SCRIPT    ${BICyan}[${BIYellow}P.N.S${BICyan}]${NC} "
+echo -e " ${BICyan}|    [${BIWhite}14${BICyan}] CEK AKUN${NC} "
 echo -e " ${BICyan}|    [${BIWhite}15${BICyan}] BACKUP TO GITHUB ${BICyan}[${BIYellow}Menu${BICyan}]${NC} "
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
@@ -290,7 +290,7 @@ case $opt in
 11) clear ; m-bot ;;
 12) clear ; m-ip ;;
 13) clear ; clearcache ;;
-#14) clear ; menu-update ;;
+14) clear ; cat /etc/log-create-user.log ;;
 15) clear ; menu-bckp ;;
 0) clear ; menu ;;
 x) exit ;;
