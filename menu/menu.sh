@@ -57,11 +57,14 @@ Exp=$(curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/regis | g
 fi
 
 # =========================================
-vmc=$(grep -c -E "^#vmg " "/etc/xray/config.json")
+vmc=$(grep -c -E "^### " "/etc/xray/config.json")
+let vma=$vmc/2
 # TOTAL ACC CREATE  VLESS WS
-vlx=$(grep -c -E "^#vlg " "/etc/xray/config.json")
+vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
+let vla=$vlx/2
 # TOTAL ACC CREATE  TROJAN
-trx=$(grep -c -E "^#tr " "/etc/xray/config.json")
+trx=$(grep -c -E "^#! " "/etc/xray/config.json")
+let tra=$trx/2
 # TOTAL ACC CREATE OVPN SSH
 ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
 
@@ -241,7 +244,7 @@ echo -e "${BIYellow}JANGAN LUPA KAWAN TETAP SLALU BERSYUKUR KEADAAN APAPUN${NC}"
 
 echo -e "${BIYellow}┌──────────────────────────────────────────────────┐${NC}" 
 echo -e "${BIYellow}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
-echo -e "${BIYellow}│  \033[0m ${Blue} $ssh1        $vmc           $vlx          $trx   $NC" 
+echo -e "${BIYellow}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra   $NC" 
 echo -e "${BIYellow}└──────────────────────────────────────────────────┘${NC}" 
   
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
@@ -287,7 +290,7 @@ case $opt in
 11) clear ; m-bot ;;
 12) clear ; m-ip ;;
 13) clear ; clearcache ;;
-14) clear ; menu-update ;;
+#14) clear ; menu-update ;;
 15) clear ; menu-bckp ;;
 0) clear ; menu ;;
 x) exit ;;
