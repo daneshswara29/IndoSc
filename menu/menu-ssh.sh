@@ -1032,6 +1032,7 @@ case $opt in
 07 | 7) clear ; hapuslama ; exit ;;
 08 | 8) clear ; autokill ; exit ;;
 09 | 9) clear ; ceklim ; exit ;;
+10 | 10) clear ; autodel ; exit ;;
 00 | 0) clear ; menu ; exit ;;
 X  | 0) clear ; menu-ssh ;;
 x) exit ;;
