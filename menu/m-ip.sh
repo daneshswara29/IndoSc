@@ -120,7 +120,7 @@ read -p "   NEW IPVPS : " daftar
 echo -e "$COLOR1 ${NC}"
 echo -e "$COLOR1 ${NC}  [INFO] Checking the IPVPS!"
 sleep 1
-REQIP=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/ip/main/vps | awk '{print $4}' | grep $daftar)
+REQIP=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/ip/main/regis | awk '{print $4}' | grep $daftar)
 if [[ $daftar = $REQIP ]]; then
 echo -e "$COLOR1 ${NC}  [INFO] VPS IP Already Registered!!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
@@ -528,7 +528,7 @@ read -p "   RENEW IP : " RENEW
 echo -e "$COLOR1 ${NC}"
 echo -e "$COLOR1 ${NC}  [INFO] Checking the IPVPS!"
 sleep 1
-REQIP=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/ip/main/vps | awk '{print $4}' | grep $daftar)
+REQIP=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/ip/main/regis | awk '{print $4}' | grep $daftar)
 if [[ $RENEW = $ivps1 ]]; then
 cd
 clear
