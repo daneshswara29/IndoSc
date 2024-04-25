@@ -251,11 +251,11 @@ echo -e "${BIBlue} └───────────────────�
 echo -e "${BIBlue} ┌─────────────────────────────────────────────────────┐${BIBlue}"
 echo -e "${BIBlue} │$BIBlue ${BIBlue}HARI ini${BIBlue}: ${BIBlue}$ttoday$BIBlue ${BIBlue}KEMARIN${BIBlue}: ${BIBlue}$tyest$BIBlue ${BIBlue}BULAN${BIBlue}: ${BIBlue}$tmon$BIBlue $BIBlue"
 echo -e "${BIBlue} └─────────────────────────────────────────────────────┘${BIBlue}"
-echo -e " ${BIBlue}┌─────────────────────────────────────┐${BIBlue}"
+echo -e "${BIBlue} ┌─────────────────────────────────────────────────────┐${BIBlue}"
 echo -e " ${BIBlue}│  Version      ${BIBlue} : ${BIBlue}${sem} ${BIBlue}Last Update ${BIBlue}"
 echo -e " ${BIBlue}│  User         ${BIBlue} :${BIBlue} ${Name} ${BIBlue}"
 echo -e " ${BIBlue}│  Day Expired${BIBlue}   :${BIBlue} ${Exp}${BIBlue} ${sts}"
-echo -e " ${BIBlue}└─────────────────────────────────────┘${BIBlue}"
+echo -e "${BIBlue} └─────────────────────────────────────────────────────┘${BIBlue}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
