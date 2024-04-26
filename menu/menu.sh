@@ -1,6 +1,6 @@
 #!/bin/bash
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/regis > /root/tmp
+    curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/vps > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -18,7 +18,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/regis | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/vps | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -35,7 +35,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/regis | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/vps | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -53,7 +53,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/regis | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/daneshswara29/IP/main/vps | grep $MYIP | awk '{print $3}')
 fi
 
 # =========================================
@@ -192,7 +192,7 @@ else
 resv2r="${red}OFF${NC}"
 fi
 today=$(date -d "0 days" +"%Y-%m-%d")
-Exp1=$(curl https://raw.githubusercontent.com/daneshswara29/IP/main/regis | grep $MYIP | awk '{print $3}')
+Exp1=$(curl https://raw.githubusercontent.com/daneshswara29/IP/main/vps | grep $MYIP | awk '{print $3}')
 if [[ $today < $Exp1 ]]; then
     sts="${Info}"
 else
