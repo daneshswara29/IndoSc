@@ -161,6 +161,12 @@ touch /etc/slowdns/server.key
 mkdir -p /etc/kuhing
 mkdir -p /etc/kuhing/theme
 mkdir -p /var/lib >/dev/null 2>&1
+echo "& plughin Account" >>/etc/vmess/.vmess.db
+echo "& plughin Account" >>/etc/vless/.vless.db
+echo "& plughin Account" >>/etc/trojan/.trojan.db
+echo "& plughin Account" >>/etc/shadowsocks/.shadowsocks.db
+echo "& plughin Account" >>/etc/ssh/.ssh.db
+echo "echo -e 'Vps Config User Account'" >> /etc/user-create/user.log
 echo "IP=" >> /var/lib/ipvps.conf
 clear
 echo ""
