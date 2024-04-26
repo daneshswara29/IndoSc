@@ -27,7 +27,7 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 TEXT="
 <code>◇━━━━━━━━━━━━━━◇</code>
 <u>⚠️ AUTOSCRIPT INSTALLER ⚠️</b>
-<u>  ⚠️ CorpIDR2 STORE ⚠️</b>
+<u>  ⚠️ D_swara STORE ⚠️</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <code>DOMAIN     : </code><code>${domain}</code>
 <code>LINUX      : </code><code>${MYIP}</code>
