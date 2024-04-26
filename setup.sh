@@ -148,6 +148,14 @@ touch /etc/per/id
 touch /etc/per/token
 mkdir -p /etc/dns
 mkdir -p /etc/slowdns
+mkdir -p /etc/kyt/limit/vmess/ip
+mkdir -p /etc/kyt/limit/vless/ip
+mkdir -p /etc/kyt/limit/trojan/ip
+mkdir -p /etc/kyt/limit/ssh/ip
+mkdir -p /etc/limit/vmess
+mkdir -p /etc/limit/vless
+mkdir -p /etc/limit/trojan
+mkdir -p /etc/limit/ssh
 touch /etc/slowdns/server.pub
 touch /etc/slowdns/server.key
 mkdir -p /etc/kuhing
