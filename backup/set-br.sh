@@ -43,7 +43,7 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/6/IndoSc/main/backup/autobackup.sh"
+wget -O autobackup "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/backup/autobackup.sh"
 wget -O backup "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/backup/backup.sh"
 wget -O restore "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/backup/restore.sh"
 wget -O strt "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/backup/strt.sh"
