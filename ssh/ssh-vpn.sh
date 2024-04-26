@@ -342,6 +342,7 @@ wget -O trialtrojango "https://raw.githubusercontent.com/daneshswara29/IndoSc/ma
 wget -O deltrgo "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/xray/deltrgo.sh"
 wget -O renewtrgo "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/xray/renewtrgo.sh"
 wget -O cektrgo "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/xray/cektrgo.sh"
+wget -O tunnel "https://raw.githubusercontent.com/daneshswara29/IndoSc/main/menu/tunnel.sh"
 chmod +x menu-update
 chmod +x update
 chmod +x menu
@@ -407,6 +408,7 @@ chmod +x trialtrojango
 chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x cektrgo
+chmod +x tunnel
 cd
 
 
